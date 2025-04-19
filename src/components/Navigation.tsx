@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { LogIn, ArrowRight } from "lucide-react";
+import { LogIn, ArrowRight, FileText } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -31,7 +31,13 @@ const Navigation = () => {
     }`}>
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <span className="text-2xl font-bold text-text">Vaultly</span>
+          <div className="flex items-center gap-2">
+            <img 
+              src="/lovable-uploads/a996f9fb-95a6-4429-971b-0822c6604be7.png" 
+              alt="Vaultly Logo" 
+              className="h-8 w-auto"
+            />
+          </div>
           
           <NavigationMenu>
             <NavigationMenuList className="hidden md:flex gap-1">
