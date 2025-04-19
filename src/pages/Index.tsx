@@ -1,4 +1,3 @@
-
 import { Wallet, Link, ArrowRight, Globe, Shield, Activity, CreditCard, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/Hero";
@@ -10,10 +9,12 @@ import UseCase from "@/components/UseCase";
 import Roadmap from "@/components/Roadmap";
 import Team from "@/components/Team";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-text">
+      <Navigation />
       <Hero />
       <PlatformOverview />
       <HowItWorks />
