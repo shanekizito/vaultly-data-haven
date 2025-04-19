@@ -17,7 +17,7 @@ const Hero = () => {
           Your data. Your vault. Your value.
         </h1>
         <p className="text-lg sm:text-xl text-text/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-          Reclaim ownership of your data, set your terms, and earn securely.
+          Vaultly is a decentralized platform that lets you anonymize, price, and sell your personal data on your terms.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <Button 
@@ -34,7 +34,7 @@ const Hero = () => {
             className="border-2 border-accent-teal text-accent-teal hover:bg-accent-teal/10 inline-flex items-center gap-2 h-14 px-8 text-base"
           >
             <Link size={20} />
-            Explore Marketplace
+            Explore Platform
           </Button>
         </div>
       </div>

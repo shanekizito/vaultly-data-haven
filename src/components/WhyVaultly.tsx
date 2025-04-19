@@ -26,17 +26,20 @@ const features = [
 
 const WhyVaultly = () => {
   return (
-    <section className="py-32 bg-muted/10">
+    <section className="py-32 bg-background">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-text tracking-tighter mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-text tracking-tighter mb-4">
           Why Choose Vaultly
         </h2>
+        <p className="text-lg text-text/70 text-center max-w-2xl mx-auto mb-16 leading-relaxed">
+          Our platform stands apart with core principles of security, fairness, and transparency
+        </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="p-8 rounded-2xl bg-background border-2 border-accent-purple/10 hover:border-accent-purple/30 transition-all"
+              className="p-8 rounded-2xl bg-muted/30 backdrop-blur-sm border-2 border-accent-purple/10 hover:border-accent-purple/30 transition-all"
             >
               <div className="mb-6">{feature.icon}</div>
               <h3 className="text-2xl font-semibold text-text tracking-tight mb-4">{feature.title}</h3>
