@@ -21,21 +21,21 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-20 bg-background relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-text mb-12">
+    <section className="py-32 bg-background relative">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-text tracking-tighter mb-16">
           How Vaultly Works
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="p-6 rounded-lg bg-muted/30 backdrop-blur-sm border border-accent-teal/10 hover:border-accent-teal/30 transition-colors"
+              className="p-8 rounded-2xl bg-muted/30 backdrop-blur-sm border border-accent-teal/10 hover:border-accent-teal/30 transition-colors"
             >
-              <div className="mb-4">{step.icon}</div>
-              <h3 className="text-xl font-semibold text-text mb-2">{step.title}</h3>
-              <p className="text-text/70">{step.description}</p>
+              <div className="mb-6">{step.icon}</div>
+              <h3 className="text-2xl font-semibold text-text tracking-tight mb-4">{step.title}</h3>
+              <p className="text-text/70 text-lg leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
